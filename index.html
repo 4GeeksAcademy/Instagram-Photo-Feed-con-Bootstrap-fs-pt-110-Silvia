@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+  <title>Post</title>
+
+</head>
+
+<body>
+  <header>
+    
+    <nav class="navbar navbar-light bg-light">
+          <div class="d-flex align-items-center gap-1">
+              <i class="fa-brands fa-instagram"></i>
+              <a class="navbar-brand" href="#"><strong>Instagram</strong></a>
+          </div>
+          <form class="d-flex">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>                                              
+                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel"><strong>Create a new post</strong></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label">Caption:</label>
+                            <textarea class="form-control" id="message-text">Add the caption of your post here</textarea>
+                              <div class="button-icons">
+                              <button type="button"><i class="fa-solid fa-camera"></i></button>
+                              <button type="button"><i class="fa-solid fa-location-dot"></i></button>
+                              </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                     <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                    <div class="dropdown ms-auto">
+                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i></button>
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                      </ul>
+                    </div>
+                    </div>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <ul class="nav nav-pills mb-3 botones-vistas" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active boton-grid" style="background-color: white;" id="pills-home-tab"
+                data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                aria-selected="true">
+          <i class="fa-solid fa-table-cells" style="color: #000000;"></i>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link boton-columna" style="background-color: white;" id="pills-profile-tab"
+                data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                aria-selected="false">
+          <i class="fa-solid fa-square" style="color: grey;"></i>
+        </button>
+      </li>
+    </ul>
+    
+    <div class="tab-content contenido-grid" id="pills-tabContent">
+      <!-- Vista de Grid -->
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+        <div class="container text-center">
+          <!-- Primera fila -->
+          <div class="row">
+            <div class="col">
+              <img src="https://store.ubisoft.com/on/demandware.static/-/Sites-masterCatalog/default/dw5df235dd/images/large/56c4947f88a7e300458b4690.jpg" class="img-thumbnail" alt="Imagen 1">
+            </div>
+            <div class="col">
+              <img src="https://static.wikia.nocookie.net/assassinscreed/images/1/14/PiazzaDiSanMarco.jpg/revision/latest?cb=20120623172019" class="img-thumbnail" alt="Imagen 2">
+            </div>
+            <div class="col">
+              <img src="https://preview.redd.it/quq1eep83yl51.png?width=570&format=png&auto=webp&s=4a2f9862811593a7e3209e497a9e625715553015" class="img-thumbnail" alt="Imagen 3">
+            </div>
+          </div>
+          <!-- Segunda fila -->
+          <div class="row mt-3">
+            <div class="col">
+              <img src="https://image.api.playstation.com/cdn/UP0001/CUSA00010_00/US4NCAJYPPkVtniLblOOTn0G4Uy293sB.png" class="img-thumbnail" alt="Imagen 4">
+            </div>
+            <div class="col">
+              <img src="https://assetsio.gnwcdn.com/138971716106.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp" class="img-thumbnail" alt="Imagen 5">
+            </div>
+            <div class="col">
+              <img src="https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc4/Assassins-Creed-IV-Black-Flag-Remake-could-bring-gameplay-ehancements91.jpg" class="img-thumbnail" alt="Imagen 6">
+            </div>
+          </div>
+          <!-- Tercera fila -->
+          <div class="row mt-3">
+            <div class="col">
+              <img src="https://bigthink.com/wp-content/uploads/2023/11/The_Masyaf_Castle_-_from_below.jpeg?w=480&h=270&crop=1" class="img-thumbnail" alt="Imagen 7">
+            </div>
+            <div class="col">
+              <img src="https://www.ancient-origins.net/sites/default/files/masyaf-castle-assassins-real.jpg" class="img-thumbnail" alt="Imagen 8">
+            </div>
+            <div class="col">
+              <img src="https://img.atlasobscura.com/lFfolLx3RAV2HuCzItYfEatWKBLHOnTo8Fa9erDOqgo/rs:fill:780:520:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9mMzMz/OWYyNDIyMzFmNTQ0/NzQzNTlmZWRiOTY4/NGFjMzZlOWQ4NTQz/LmpwZw.jpg" class="img-thumbnail" alt="Imagen 9">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Vista en Columnas (Cards) -->
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <div class="container">
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col contenedor-cards">
+              <div class="card card-foto">
+                <div class="card-body card-encabezado">
+                  <h5 class="card-title titutulo-card">Assassin's Creed: Ezio's Saga</h5>
+                  <p class="card-text numero-foto-card">01/01</p>
+                </div>
+                <div class="body-card">
+                  <img src="https://store.ubisoft.com/on/demandware.static/-/Sites-masterCatalog/default/dw5df235dd/images/large/56c4947f88a7e300458b4690.jpg" class="img-thumbnail card-img-top fotos-columnas" alt="Ezio's Saga">
+                </div>
+                <div class="footer">
+                  <p>
+                    <b>786 Likes</b>
+                    <i class="fa-regular fa-heart fa-xs"></i>
+                    <i class="fa-regular fa-comment fa-xs"></i>
+                    <i class="fa-regular fa-paper-plane fa-xs"></i>
+                  </p>
+                  <p class="descripcion">
+                    Assassin's Creed II es el primer videojuego de la saga donde aparece Ezio Auditore, marcando un antes y un después.
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="col contenedor-cards">
+              <div class="card card-foto">
+                <div class="card-body card-encabezado">
+                  <h5 class="card-title titutulo-card">Black Flag: El inicio...</h5>
+                  <p class="card-text numero-foto-card">28/02</p>
+                </div>
+                <div class="body-card">
+                  <img src="https://image.api.playstation.com/cdn/UP0001/CUSA00010_00/US4NCAJYPPkVtniLblOOTn0G4Uy293sB.png" class="img-thumbnail card-img-top fotos-columnas" alt="Black Flag">
+                </div>
+                <div class="footer">
+                  <p>
+                    <b>1587 Likes</b>
+                    <i class="fa-regular fa-heart fa-xs"></i>
+                    <i class="fa-regular fa-comment fa-xs"></i>
+                    <i class="fa-regular fa-paper-plane fa-xs"></i>
+                  </p>
+                  <p class="descripcion-foto">
+                    Aunque no es el mejor, Black Flag marca el inicio de “la cagada” en la saga. Si jugaste con Ezio, lo ideal es reiniciar.
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="col contenedor-cards">
+              <div class="card card-foto">
+                <div class="card-body card-encabezado">
+                  <h5 class="card-title titutulo-card">Masyaf</h5>
+                  <p class="card-text numero-foto-card">19/07</p>
+                </div>
+                <div class="body-card">
+                  <img src="https://www.ancient-origins.net/sites/default/files/masyaf-castle-assassins-real.jpg" class="img-thumbnail card-img-top fotos-columnas" alt="Masyaf">
+                </div>
+                <div class="footer">
+                  <p>
+                    <b>1993 Likes</b>
+                    <i class="fa-regular fa-heart fa-xs"></i>
+                    <i class="fa-regular fa-comment fa-xs"></i>
+                    <i class="fa-regular fa-paper-plane fa-xs"></i>
+                  </p>
+                  <p class="descripcion-foto">
+                    Masyaf introducirá a Desmond en la historia de Altaïr y Ezio. ¿Sabías que es un sitio real y que la orden de los Asesinos existe?
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+          </div> 
+        </div> 
+      </div>
+    </div>        
+            
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
