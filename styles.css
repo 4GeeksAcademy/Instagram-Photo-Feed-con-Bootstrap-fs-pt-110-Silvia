@@ -1,0 +1,37 @@
+/* Aquí he aplicado el pading en el navbar ya que se me indicó que no lo había usado*/
+.navbar, .modal-content, .card-encabezado, .footer {
+  padding: 15px;
+}
+
+.d-flex.align-items-center.gap-1, .d-grid.gap-2.d-md-flex.justify-content-md-end {
+  padding: 5px;
+}
+/* Aquí he añadido contenido para corregir el tamaño de las imágenes y que sean del mismo tamaño*/
+
+.contenido-grid img, .body-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/*Aquí he añadido contenido para que las cards en el swich tengan el mismo tamaño*/
+
+.contenedor-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card-foto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.body-card {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
